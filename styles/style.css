@@ -30,7 +30,8 @@ body {
   padding: 8px 16px;
   border: 2px solid rgb(76, 82, 78);
   border-radius: 12px;
-  background-color: rgb(229, 235, 231);
+  /* background-color: rgb(229, 235, 231); */
+  background: linear-gradient(90deg, rgba(255, 255, 255), rgba(91, 92, 91) 50%);
   color: black;
   font-weight: 500;
   margin-bottom: 16px;
