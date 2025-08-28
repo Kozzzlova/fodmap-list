@@ -1,0 +1,81 @@
+body {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('./background.avif');
+  background-size: 300px;
+  background-repeat: repeat;
+  padding: 24px 0;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.wrapper {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 0 24px;
+  }
+}
+
+.input {
+  width: 100%;
+  padding: 8px 16px;
+  border: 2px solid rgb(76, 82, 78);
+  border-radius: 12px;
+  background-color: rgba(53, 201, 114, 0.5);
+  color: black;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.products-list {
+  width: 100%;
+  border: 2px solid rgb(76, 82, 78);
+  border-radius: 12px;
+  min-height: 24px;
+}
+
+.product-item {
+  padding: 8px;
+  font-size: 20px;
+  color: white;
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(10, 136, 62, 0.8) 6%,
+    rgba(255, 255, 255, 0.7)
+  );
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(10, 136, 62, 0.8) 6%,
+    rgba(255, 255, 255, 0.7)
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(10, 136, 62, 0.8) 6%,
+    rgba(255, 255, 255, 0.7)
+  );
+}
+
+.product-item:first-child {
+  border-radius: 9px 9px 0 0;
+}
+.product-item:not(:last-child) {
+  border-bottom: 1px solid rgb(76, 82, 78);
+}
+
+.product-item.red {
+  background: linear-gradient(
+    90deg,
+    rgba(136, 10, 42, 0.8) 6%,
+    rgba(255, 255, 255, 0.7)
+  );
+}
