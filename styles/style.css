@@ -6,7 +6,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-image: url('./background.avif');
+  background-image: url('../assets/background.avif');
   background-size: 300px;
   background-repeat: repeat;
   padding: 24px 0;
